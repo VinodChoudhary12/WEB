@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Slide</title>
+    <style>
+        body{
+            background: #333;
+        }
+        .drop-down-menu ul,.drop-down-menu li {
+            margin: 0;
+            padding: 0;
+        }
+        .drop-down-menu ul{
+            background: gray;
+            list-style: none;
+            width: 100%;
+        }
+        .drop-down-menu li{
+            float: left;
+            position: relative;
+            width: auto;
+        }
+        .drop-down-menu a{
+            background: #30a6e6;
+            color: white;
+            display: block;
+            font-weight: bold;
+            font-size: 13px;
+            font-family: 'popins',sans-serif;
+            padding: 15px 55px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+        .drop-down-menu li:hover a{
+            background: #34495e;;
+             
+        }
+        #submenu{
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            top:35px;
+            visibility: hidden;
+            z-index: 1;
+        }
+        li:hover ul#submenu{
+            opacity: 1;
+            top: 50px;
+            visibility: visible;
+        }
+        #submenu li {
+            float: none;
+            width: 100%;
+
+        }
+        #submenu a:hover{
+            background: silver;
+        }
+        #submenu a {
+            background-color: #34495e;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav class="drop-down-menu">
+        <ul>
+           
+            <li><a >More</a>
+            <ul id="submenu">
+                <li>
+                    <a href="#">important</a>
+                </li>
+                <li>
+                    <a href="#">Chat</a>
+                </li>
+                <li>
+                    <a href="#">Secudele</a>
+                </li>
+                <li>
+                    <a href="#">All Mails</a>
+                </li>
+                <li>
+                    <a href="#">Spam</a>
+                </li>
+                <li>
+                    <a href="#">Bin</a>
+                </li>
+            </ul>
+            </li>
+            <!-- <li><a href="">Pages</a></li> -->
+        </ul>
+    </nav>
+
+
+    
+    
+</body>
+</html>

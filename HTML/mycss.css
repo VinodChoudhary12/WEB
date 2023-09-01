@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+/* Header */
+.header_left img{
+    background-size: cover;
+    object-fit: contain;
+    height: 80px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.material-color{
+    color: grey ;
+}
+ .header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+} 
+.header_left{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.header_middle{
+
+     display: flex;
+    flex: 0.7;
+    align-items: center;
+    background-color: rgb(234,241,251);
+    padding: 1px;
+    border-radius: 50px; 
+    border: none;
+
+}
+.header_middle input{
+    border: none;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-size: medium;
+    background-color: transparent;
+
+}
+.header_right{
+    display: flex;
+    padding-right: 20px;
+} 
+.header_right span{
+    padding: 10px;
+    cursor: pointer;
+} 
+/*Sidebar*/
+.sidebar{
+    flex: 0.3;
+    max-width: 300px;
+    padding-right: 20px;
+}
+.sidebar_compose{
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: black;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgb(194,231,255);
+    
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+   /* border-radius: 50px; */
+    box-shadow: 0px 2px 5px -2px rgb(from rgb(194,231,255));
+} 
+.sidebar_compose span{
+    margin: 5px;
+}
+/* 
+.drop-down-menu ul,.drop-down-menu li {
+    margin: 0;
+    padding: 0;
+} */
+.drop-down-menu ul{
+    background: gray;
+    list-style: none;
+    width: 100%;
+}
+.drop-down-menu li{
+    float: left;
+    position: relative;
+    width: auto;
+}
+.drop-down-menu a{
+    /* background: rgb(242, 244, 245); */
+    color: rgb(1, 1, 1);
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+    /* font-family: 'popins',sans-serif; */
+    
+    padding: 15px 55px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+
+.drop-down-menu li:hover a{
+    background: rgb(204,204,204);
+     
+}
+#submenu{
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top:35px;
+    visibility: hidden;
+    z-index: 1;
+}
+li:hover ul#submenu{
+    opacity: 1;
+    top: 50px;
+    visibility: visible;
+}
+#submenu li {
+    float: none;
+    width: 100%;
+
+}
+#submenu a:hover{
+    background: rgb(204,204,204);
+    font-weight: 800;
+}
+#submenu a {
+    background-color: #f6f7f9;
+    background-color:none;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sidebaroption{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 10px ;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    color: gray;
+}
+.sidebaroption h3{
+    flex: 1;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+ .sidebaroption:hover,
+.sidebaroption:hover h3,
+.sidebaroption:hover .material-symbols-outlined,
+.sidebaroption_active,
+.sidebaroption_active h3,
+.sidebaroption_active .material-symbols-outlined{
+    background-color: rgb(204,204,204);
+    
+    font-weight: 800;
+  
+}
+/* >>>>>>>>>>>>>>>>>>>>Main Body<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.main_body
+{
+    display: flex;
+    height: 100vh;
+}
+body{
+    height: 200vh;
+    overflow-y: hidden;
+}
+/* >>>>>>>>>>>>>>>>>>>>Main Body<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.emaillist{
+    flex: 1;
+    overflow: scroll;
+}
+.emaillist_setting{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid whitesmoke;
+    background-color: white;
+    z-index: 999;
+    padding: 8px;
+}
+.emaillist_settingleft{
+    display: flex;
+    align-items: center;
+}
+.emaillist_setting .material-symbols-outlined{
+    margin: 5px;
+    cursor: pointer;
+}
+.selection{
+    display: flex;
+    align-items: center;
+    border-bottom-width: 2px;
+    padding: 15px;
+    min-width: 200px;
+    cursor: pointer;
+    color: srgb(194,231,255);
+    border-width: 0;
+}
+
+.emaillist_section{
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid whitesmoke;
+    z-index: 999;
+    cursor: pointer;
+}
+.Section_selected
+{
+    background-color: whitesmoke;
+    border-width: 3px;
+    color: rgb(11,87,208);
+    border-bottom: 3px solid rgb(194,231,255);
+   
+}
+.Section_selected .material-symbols-outlined{
+    color: rgb(194,231,255);
+}
+.selection:hover {
+    background-color: whitesmoke;
+    border-width: 3px;
+}
+.selection h4{
+    font-size: 14px;
+    margin-left: 15px;
+}
+.emailrowoptions{
+    display: flex;
+    align-items: center;
+}
+.emailrowoptions .material-symbols-outlined,input{
+    margin: 5px;
+
+}
+.emailrow{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid whitesmoke;
+    cursor: pointer;
+    z-index: 999;
+}
+.emailrow:hover{
+    border-top:  1px solid whitesmoke;
+    box-shadow: 0 4px 4px -2px rgb(0, 0 , 0,0.24);
+}
+.emailrow_message{
+    display: flex;
+    flex: 0.8;
+    align-items: center;
+    font-size: 13px;
+}
+.emailrow_message h4{
+
+    width: 400px;
+    white-space: hidden;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.emailrow_title{
+    font-size: 13px;
+    flex: 0.3;
+}
+.emailrow_time{
+    padding-right: 15px;
+    font-size: 10px;
+    font-weight: bold;
+}
+.email_description{
+    font-weight: 400;
+    color: grey;
+}
+
+

@@ -1,0 +1,95 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+
+header {
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+header .gmail-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+header .search-bar {
+    width: 300px;
+    padding: 5px;
+}
+
+aside {
+    background-color: #fff;
+    width: 200px;
+    padding: 10px;
+}
+
+aside .sidebar-label {
+    padding: 5px;
+    cursor: pointer;
+}
+
+main {
+    background-color: #fff;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+main .email-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+}
+
+section {
+    background-color: #f9f9f9;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.email-content {
+    padding: 10px;
+}
+
+.email-content .email-sender {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.email-content .email-subject {
+    margin-bottom: 5px;
+}
+
+.email-content .email-date {
+    color: #888;
+    margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header .search-bar {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    aside {
+        width: 100%;
+    }
+}

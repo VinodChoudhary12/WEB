@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="">
+    <table  align="center" cellpadding="20" cellspacing="0" >
+            <caption><h2>Add Product Form</h2></caption>
+            <tr>
+                <td><label >Product Name</label></td>
+               <td> <input  required type="text" placeholder="Enter Product Name" name="Productname" id="Productname"></td>
+            </tr>
+            <tr>
+                <td>Product Quantity</td>
+                <td><input required type="Number" placeholder="Product Quantity" min="0"></td>
+            </tr>
+            <tr>
+                <td><label >Product Price(Per Piece)</label></td>
+                <td><input required type="Number" placeholder="Product Price" min="0"></td>
+            </tr>
+            <tr>
+                <td><label >Mode of Payment</label></td>
+                <!-- <td><select required name="Mode" id="mode"> </td>
+                <td><option value="UPI"></option></td>
+                <td><option value="UPI"></option></td>
+            </select> -->
+            <td>
+                <select required name="Mode" id="mode" >
+                    <!-- <select name="subject" id="subject" multiple> -->
+                    <option value="">Select Mode Of Payment</option>
+                    <option value="upi">UPI</option>                                        
+                    <option value="COD">COD</option>                    
+                    <option value="Net Banking">Net Banking</option>                    
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td><label >Type</label></td>
+                <td>
+                    <input required checked type="radio" name="Type" id="import">
+                    <label for="import">import</label>
+                    <input type="radio" name="Type" id="Export">
+                    <label for="Export" >Export</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label >Wheight</label></td>
+                <td>
+                    <input required checked type="checkbox" name="Wheight" id="one">
+                    <label for="<=50KG"><=50KG</label>
+                    <input type="checkbox" name="Wheight" id="two">
+                    <label for=">=50KG">>=50KG</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="AddProduct" name="Add" id="addProduct">
+                </td>
+                <td>
+                    <input type="reset" name="reset" id="reset">
+                </td>
+            </tr>
+
+        </form>
+    </table>
+
+
+</body>
+</html>
